@@ -6,15 +6,15 @@ This method means that inmates may be released after serving 2/3 of their senten
 3. **Inmate's time left to serve** (based on the 2/3 rule).
 4. **Release date** (calculated based on the time left).
 
-Here’s a breakdown of the steps involved:
+Hereâ€™s a breakdown of the steps involved:
 1. **Input the total sentence** and the **time already served**.
 2. **Calculate the 2/3 point** of the sentence.
 3. **Determine how much time is left** based on the 2/3 rule.
-4. **Calculate the release date** by adding the time left to today’s date.
+4. **Calculate the release date** by adding the time left to todayâ€™s date.
 
 ### Full Python Program
 
-Here’s a Python script that performs the inmate release date calculation. You can run this program in any Python environment, and it should be executable as a standalone script.
+Hereâ€™s a Python script that performs the inmate release date calculation. You can run this program in any Python environment, and it should be executable as a standalone script.
 
 ```python
 from datetime import datetime, timedelta
@@ -100,7 +100,7 @@ if __name__ == "__main__":
    - `convert_to_days`: Converts years, months, and days into total days (approximate conversions: 1 year = 365 days, 1 month = 30 days).
    - `calculate_two_third_sentence`: Calculates 2/3 of the total sentence.
    - `calculate_time_left`: Determines how much time is left based on the 2/3 rule and the time already served.
-   - `calculate_release_date`: Adds the time left to today’s date to get the inmate’s release date.
+   - `calculate_release_date`: Adds the time left to todayâ€™s date to get the inmateâ€™s release date.
    - `display_inmate_info`: Displays the results of the calculation, including total sentence, time served, time left, and the release date.
 
 3. **User Input:**
@@ -124,7 +124,7 @@ Estimated release date (2/3 rule): 2024-08-15
 
 ### **Additional Information:**
 
-- The **2/3 rule** allows the inmate to be released after serving 2/3 of the sentence, assuming there’s no additional time added or legal delays.
+- The **2/3 rule** allows the inmate to be released after serving 2/3 of the sentence, assuming thereâ€™s no additional time added or legal delays.
 - The program handles the time left calculation, ensuring the inmate's time left is never negative.
 - **Accuracy**: The program assumes a year is 365 days and a month is 30 days for simplicity. You could adjust this for leap years or more precise calculations if necessary.
 
