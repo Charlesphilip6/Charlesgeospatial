@@ -67,7 +67,7 @@ You can also use the `arp` command to check for connected devices to your networ
    - This command will list all IP addresses and corresponding MAC addresses of devices connected to your network.
 
 3. **Check for Unknown MAC Addresses**:
-   - If you see a MAC address or IP address you don’t recognize, it might be an unfamiliar or unauthorized device on your network. You can compare the IP addresses with your known devices (like printers, routers, and smartphones).
+   - If you see a MAC address or IP address you donâ€™t recognize, it might be an unfamiliar or unauthorized device on your network. You can compare the IP addresses with your known devices (like printers, routers, and smartphones).
 
 ---
 
@@ -105,7 +105,7 @@ COUNTERING THE PROBLEM
 
 
 
-Once you have discovered unauthorized devices, suspicious services, or malware on your Windows system, it’s essential to **counter** and resolve the issue to protect your system and data. Here's a comprehensive guide on how to counter the problem effectively:
+Once you have discovered unauthorized devices, suspicious services, or malware on your Windows system, itâ€™s essential to **counter** and resolve the issue to protect your system and data. Here's a comprehensive guide on how to counter the problem effectively:
 
 ### **Step 1: Disconnect from the Network (if needed)**
 If you discover serious threats, such as an unknown or malicious device or process:
@@ -121,14 +121,14 @@ If you discover serious threats, such as an unknown or malicious device or proce
 ### **Step 3: Uninstall Suspicious Programs**
 1. **Open Settings** (`Win + I`) and go to **Apps** > **Apps & Features**.
 2. Review the list of installed programs for any unknown, suspicious, or unwanted applications.
-3. **Uninstall** any software you believe is malicious or that you don’t recognize:
+3. **Uninstall** any software you believe is malicious or that you donâ€™t recognize:
    - Click on the suspicious app and select **Uninstall**.
 
 ### **Step 4: Disable or Remove Unknown Devices**
 1. **Open Device Manager** (`Win + X` > **Device Manager**).
 2. Look for **Unknown Devices** or suspicious devices in categories like **Network Adapters** or **Other Devices**.
 3. **Right-click** on the device and select **Disable** or **Uninstall**.
-4. If it’s an unknown USB or external device, **remove** it physically from your system.
+4. If itâ€™s an unknown USB or external device, **remove** it physically from your system.
 
 ### **Step 5: Remove or Block Malware and Unknown Services**
 Use a combination of security tools to remove malware or unauthorized software:
@@ -161,13 +161,13 @@ Use a combination of security tools to remove malware or unauthorized software:
    
 2. **Stop or Disable Unwanted Services**:
    - Right-click any suspicious service and select **Stop**.
-   - For services you don’t recognize or are unnecessary, change the **Startup Type** to **Disabled** to prevent them from starting automatically.
+   - For services you donâ€™t recognize or are unnecessary, change the **Startup Type** to **Disabled** to prevent them from starting automatically.
 
 ### **Step 8: Review Start-up Programs**
 1. **Check Start-up Programs**:
    - Open **Task Manager** (`Ctrl + Shift + Esc`).
    - Go to the **Startup** tab.
-   - Disable any programs you don’t recognize from automatically starting with your system.
+   - Disable any programs you donâ€™t recognize from automatically starting with your system.
    
 2. **Use Autoruns**:
    - Download and run **Autoruns** by Microsoft. This tool gives you a more detailed view of programs that are set to start on boot.
@@ -204,7 +204,7 @@ Use a combination of security tools to remove malware or unauthorized software:
    - Install network monitoring tools like **Wireshark** or **GlassWire** to track network activity and detect unusual traffic patterns or devices trying to access your network.
 
 2. **Check Router Logs**:
-   - If you're concerned about rogue devices on your network, log into your router’s settings and check its logs for unknown devices or unusual activity.
+   - If you're concerned about rogue devices on your network, log into your routerâ€™s settings and check its logs for unknown devices or unusual activity.
 
 ---
 
