@@ -15,7 +15,7 @@ import qgis.core
 print(qgis.core.QgsApplication.showSettings())
 ```
 
-Ensure all dependencies are met for PyQGIS. If there are any missing libraries or packages, install them using QGIS’s internal Python package manager.
+Ensure all dependencies are met for PyQGIS. If there are any missing libraries or packages, install them using QGISâ€™s internal Python package manager.
 
 ##### **3. Configure DJI SDK to connect to your Phantom 4 drone**
 In this step, ensure that you import the DJI SDK in your Python script. The code will look like this:
@@ -96,8 +96,8 @@ print("Drone location has been added to QGIS.")
 ```
 
 **Key Improvements:**
-- **Layer Creation**: Instead of directly adding points to the map, I’ve added the point to a `QgsVectorLayer`. This ensures that you can store and manipulate the points as a layer, which is more efficient for larger datasets and provides greater flexibility.
-- **Attributes**: I’ve added attributes for the point (latitude and longitude), which will allow for future data analysis and display in QGIS.
+- **Layer Creation**: Instead of directly adding points to the map, Iâ€™ve added the point to a `QgsVectorLayer`. This ensures that you can store and manipulate the points as a layer, which is more efficient for larger datasets and provides greater flexibility.
+- **Attributes**: Iâ€™ve added attributes for the point (latitude and longitude), which will allow for future data analysis and display in QGIS.
 - **Error Checking**: A basic error check has been added to ensure the telemetry data is successfully retrieved before creating the map layer.
 - **Map Layer**: The code now adds a new layer to the QGIS project, making it easier to visualize and manage.
 
@@ -105,8 +105,8 @@ print("Drone location has been added to QGIS.")
 You can use the GPS tracking feature within QGIS to analyze live or historical flight paths. Be sure to store telemetry data in a format that can be easily manipulated (such as GeoJSON, CSV, or shapefiles).
 
 **Suggestions for Improvement:**
-- **Telemetry Storage**: It’s a good idea to store telemetry data continuously so you can track and analyze the flight path over time. You could use a loop to periodically grab data and update the map canvas.
-- **Storing Paths**: If you're storing telemetry data, you can use a `QgsLineString` instead of individual points to show the drone’s entire flight path in real-time.
+- **Telemetry Storage**: Itâ€™s a good idea to store telemetry data continuously so you can track and analyze the flight path over time. You could use a loop to periodically grab data and update the map canvas.
+- **Storing Paths**: If you're storing telemetry data, you can use a `QgsLineString` instead of individual points to show the droneâ€™s entire flight path in real-time.
 
 ##### **Additional Tips:**
 - **Battery Status, Altitude, etc.**: You can also fetch and display other telemetry information like battery status, altitude, and speed. This can help in creating a more detailed analysis of the drone flight.
@@ -118,7 +118,7 @@ You can use the GPS tracking feature within QGIS to analyze live or historical f
 
 
 #### **Method 2: Using QGIS's Built-In DJI Plugin**
-Here’s a detailed step-by-step guide on how to use the **DJI Plugin** in QGIS to connect your DJI Phantom 4 Pro drone, import flight log data, and visualize telemetry data such as speed, altitude, and waypoints.
+Hereâ€™s a detailed step-by-step guide on how to use the **DJI Plugin** in QGIS to connect your DJI Phantom 4 Pro drone, import flight log data, and visualize telemetry data such as speed, altitude, and waypoints.
 
 ### **Detailed Steps to Use the DJI Plugin in QGIS**
 
@@ -136,14 +136,14 @@ Here’s a detailed step-by-step guide on how to use the **DJI Plugin** in QGIS to
 
 #### **Step 3: Configure the DJI Plugin**
 1. After installing, go to the **Plugins** menu again and find the DJI Plugin in the dropdown list (e.g., **Plugins > DJI**).
-2. Select **Settings** from the plugin’s menu.
+2. Select **Settings** from the pluginâ€™s menu.
 3. You will be prompted to enter your **DJI account credentials** (the same account you use for the DJI GO app or DJI website).
-   - If you do not have an account, you’ll need to create one at [DJI](https://account.dji.com/login).
+   - If you do not have an account, youâ€™ll need to create one at [DJI](https://account.dji.com/login).
 4. Once logged in, the plugin will list available DJI drones connected to your account. Select your **Phantom 4 Pro** from the list of connected devices.
 
 #### **Step 4: Connecting the Drone to QGIS**
 1. Turn on your **DJI Phantom 4 Pro** drone and ensure it's paired with your mobile device running the **DJI GO** app.
-   - Ensure that the drone’s firmware is up-to-date to avoid compatibility issues.
+   - Ensure that the droneâ€™s firmware is up-to-date to avoid compatibility issues.
 2. In the **DJI Plugin Settings**, you should see the option to **Connect to Drone**. Select your Phantom 4 Pro and click **Connect**.
    - If the connection is successful, you should receive a confirmation that the drone is connected and telemetry data is available for import.
    - If connection issues occur, ensure your drone, mobile device, and computer are on the same network (if using Wi-Fi) or connect using a USB cable.
@@ -157,12 +157,12 @@ Here’s a detailed step-by-step guide on how to use the **DJI Plugin** in QGIS to
 4. Choose the telemetry file you want to import (or start live tracking if the drone is in flight).
 5. QGIS will process the data and add it as a layer in the **Layers Panel**.
 
-#### **Step 6: Visualizing the Drone’s Flight Path**
+#### **Step 6: Visualizing the Droneâ€™s Flight Path**
 1. After the telemetry data is imported, QGIS will automatically create a **vector layer** showing the drone's flight path. You can customize this path as a line or points in the map canvas.
 2. To visualize the flight path:
    - Go to **Layer > Add Layer > Add Vector Layer**.
    - Select the imported telemetry data layer (this should already be in the Layer list if the plugin imported successfully).
-3. Once the layer is added to the map, you’ll see the drone’s flight path drawn based on GPS data (latitude and longitude).
+3. Once the layer is added to the map, youâ€™ll see the droneâ€™s flight path drawn based on GPS data (latitude and longitude).
 
 #### **Step 7: Analyzing Telemetry Data**
 You can analyze telemetry data such as altitude, speed, and waypoints using QGIS's built-in tools:
