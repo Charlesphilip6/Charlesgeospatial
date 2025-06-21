@@ -204,7 +204,7 @@ else:
 
 2. **Signal Strength Filtering**:
    - Signal strength (if available in the dataset) is measured in dBm (decibel-milliwatts), with higher values (closer to 0) indicating a stronger signal. For instance, -60 dBm is stronger than -90 dBm.
-   - The variable `min_signal_strength` sets a threshold for displaying towers with signal strength above a certain value (e.g., -90 dBm). If a tower’s signal strength is better than this threshold, it will be displayed on the map. Set `min_signal_strength = None` to ignore this filter.
+   - The variable `min_signal_strength` sets a threshold for displaying towers with signal strength above a certain value (e.g., -90 dBm). If a towerÂ’s signal strength is better than this threshold, it will be displayed on the map. Set `min_signal_strength = None` to ignore this filter.
 
 3. **Popup Information**:
    - The marker popup now includes both the **radio type** (e.g., LTE or GSM) and the **signal strength** (if available). If signal strength is not available in the data, it will not appear in the popup.
